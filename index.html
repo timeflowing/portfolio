@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HEJVOJTECHU</title>
+  <script>
+    window.addEventListener("load", function(){
+      var loadscreen = document.getElementById("loadscreen");
+      document.body.removeChild(loadscreen);
+    });
+
+
+  </script>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+
+</head>
+<body>
+  <div id="loadscreen"><div id="loading"><div class="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div><h1></h1></div></div>
+  <div class="main-overlay js-main-overlay"></div>
+
+  <section class="cover-main" id="home" data-aos="fade-in"
+    data-aos-offset="200"
+    data-aos-delay="10"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="true"
+    data-aos-anchor-placement="top-center">
+    <header>
+      <nav class="nav-wrapper">
+        <div class="logo">
+      <a href="#">
+        <img src="images/logo.png" class="logo" alt="">
+      </a>
+
+        </div>
+      <ul class="menu">
+          <li><a href="#home">Domov</a></li>
+          <li><a href="#work">Moje práce</a></li>
+          <li><a href="#about">Kdo jsem ?</a></li>
+          <li><a href="#slider">Slider</a></li>
+          <li><a href="#footer">Kontakt</a></li>
+      </ul>
+      </nav>
+      <div class="menu-trigger js-menu-trigger"></div>
+    </header>
+
+  <div class="wrapper">
+    <ul id="scene"
+            data-invert-x="false"
+            data-invert-y="false"
+            data-scalar-x="7"
+            data-scalar-y="7"
+            data-friction-x="0.1"
+            data-friction-y="0.1"
+            data-origin-x="0.5"
+            data-origin-y="0.5">
+        <li class="layer name" data-depth="0.90">Vojtech Tomasek</li>
+        <li class="layer title" data-depth="0.50">Webdevelopement as it should be.</li>
+        <li class="layer btn btn-main" data-depth="0.30">
+          <a href="#work" class="portfolio-btn btn-js">View Portfolio</a>
+          <a href="#footer" class="contact-btn btn-js">Contact Me</a>
+        </li>
+    </ul>
+
+  </div>
+
+  </section>
+
+  <section class="masonry-grid" id="work" data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="true"
+    data-aos-anchor-placement="top-center">
+    <h2 class="sub-title">Portfolio</h2>
+    <div class="view-gallery">
+        <button>View Gallery</button>
+        </div>
+        <ul>
+        <li class="box box-1"></li>
+        <li class="box box-2"></li>
+        <li class="box box-3"></li>
+        <li class="box box-4"></li>
+        <li class="box box-5"></li>
+        <li class="box box-6"></li>
+        </ul>
+  </section>
+  <div id="popis">
+    <div class="title">
+      <h1>Webdevelopement</h1>
+
+      <p>Vymakaná tvorba webových stránek od kvalitní společnosti. Nesmité zapomenout na to, že zaručuji kvalitu a velmi pomalej deploy a ještě pomalejší rozjezd
+      </p>
+
+    </div>
+  <video autoplay muted loop id="myVideo" data-aos="zoom-out"
+    data-aos-offset="150"
+    data-aos-delay="20"
+    data-aos-duration="1000"
+    data-aos-easing="linear"
+    data-aos-mirror="true"
+    data-aos-once="true"
+    data-aos-anchor-placement="top-center">
+  <source src="images/workingbg.mp4" type="video/mp4">
+  </video>
+</div>
+
+  <section id="about">
+    <div class="wrapper">
+      <div class="container">
+        <div class="card" data-aos="slide-down"
+          data-aos-offset="100"
+          data-aos-delay="<1></1>00"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center">
+          <div class="face face1">
+              <div class="content">
+
+                  <img src="images/develop.png" alt="">
+                  <h3>Design</h3>
+              </div>
+              </div>
+              <div class="face face2">
+
+                  <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque optio ratione iusto quis officia vitae, modi tenetur et hic aliquam?</p>
+                      <a href="#">Read More</a>
+                  </div>
+              </div>
+
+          </div>
+          <div class="card"data-aos="fade-down"
+            data-aos-offset="100"
+            data-aos-delay="10"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center">
+            <div class="face face1">
+                <div class="content">
+
+                    <img src="images/design.png" alt="">
+                    <h3>Develop</h3>
+                </div>
+                </div>
+                <div class="face face2">
+
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque optio ratione iusto quis officia vitae, modi tenetur et hic aliquam?</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card"data-aos="fade-up"
+              data-aos-offset="100"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center">
+              <div class="face face1">
+                  <div class="content">
+
+                      <img src="images/deploy.png" alt="">
+                      <h3>Deploy</h3>
+                  </div>
+                  </div>
+                  <div class="face face2">
+
+                      <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque optio ratione iusto quis officia vitae, modi tenetur et hic aliquam?</p>
+                          <a href="#">Read More</a>
+                      </div>
+                  </div>
+
+              </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+</div>
+
+
+<div class="contact-form" id="form">
+
+  <div class="container">
+  <form id="contact" action="" method="post">
+    <h3>Pořebujete odbornou pomoc ?</h3>
+    <h4>Napište nám a do 24 hodin odpovíme!</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your Message Here...." type="text" tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+
+
+</div>
+</div>
+
+
+
+
+
+      <footer id="footer">HELLLOOO
+</footer>
+
+  <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js"></script>
+    <script>
+    // Nothing new here...it's all in the CSS!
+    // And don't forget to activate the pointerEvents option
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+    </script>
+
+  <script>
+  /*scrolling*/
+  window.addEventListener('scroll', function() {
+    console.log("scrollin");
+  });
+
+  </script>
+
+  <script src="scripts/main.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
+  <script src="/path/to/parallax.js"></script>
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.5.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.5.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>
