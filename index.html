@@ -6,8 +6,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HEJVOJTECHU</title>
+  <title>Webdevelopment</title>
   <script>
+
     window.addEventListener("load", function(){
       var loadscreen = document.getElementById("loadscreen");
       document.body.removeChild(loadscreen);
@@ -52,7 +53,6 @@
           <li><a href="#home">Domov</a></li>
           <li><a href="#work">Moje práce</a></li>
           <li><a href="#about">Kdo jsem ?</a></li>
-          <li><a href="#slider">Slider</a></li>
           <li><a href="#footer">Kontakt</a></li>
       </ul>
       </nav>
@@ -70,10 +70,10 @@
             data-origin-x="0.5"
             data-origin-y="0.5">
         <li class="layer name" data-depth="0.90">Vojtech Tomasek</li>
-        <li class="layer title" data-depth="0.50">Webdevelopement as it should be.</li>
+        <li class="layer title" data-depth="0.50">Progressive web apps on point.</li>
         <li class="layer btn btn-main" data-depth="0.30">
-          <a href="#work" class="portfolio-btn btn-js">View Portfolio</a>
-          <a href="#footer" class="contact-btn btn-js">Contact Me</a>
+          <a href="#work" class="portfolio-btn btn-js">Portfolio</a>
+          <a href="#footer" class="contact-btn btn-js">Kontakt</a>
         </li>
     </ul>
 
@@ -91,7 +91,7 @@
     data-aos-anchor-placement="top-center">
     <h2 class="sub-title">Portfolio</h2>
     <div class="view-gallery">
-        <button>View Gallery</button>
+        <button>Zobrazit</button>
         </div>
         <ul>
         <li class="box box-1"></li>
@@ -104,9 +104,9 @@
   </section>
   <div id="popis">
     <div class="title">
-      <h1>Webdevelopement</h1>
+      <h1>Web development</h1>
 
-      <p>Vymakaná tvorba webových stránek od kvalitní společnosti. Nesmité zapomenout na to, že zaručuji kvalitu a velmi pomalej deploy a ještě pomalejší rozjezd
+      <p> Tvorba progresivních webových aplikací založená na zkušenostech.
       </p>
 
     </div>
@@ -123,7 +123,9 @@
 </div>
 
   <section id="about">
+    <h2> Proces tvorby</h2>
     <div class="wrapper">
+
       <div class="container">
         <div class="card" data-aos="slide-down"
           data-aos-offset="100"
@@ -210,28 +212,25 @@
 
 <div class="contact-form" id="form">
 
-  <div class="container">
-  <form id="contact" action="" method="post">
-    <h3>Pořebujete odbornou pomoc ?</h3>
+  <div class="container-form">
+  <form id="contact" action="https://formspree.io/mzbdpjnd" method="POST">
+    <h3>Pořebujete se zeptat a nevíte si rady?</h3>
     <h4>Napište nám a do 24 hodin odpovíme!</h4>
-    <fieldset>
-      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Email Address" type="email" tabindex="2" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-    </fieldset>
-    <fieldset>
-      <textarea placeholder="Type your Message Here...." type="text" tabindex="5" required></textarea>
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-    </fieldset>
+    <input id="name" name="name" type="text" placeholder="Tvé celé jméno" class="input-text style3"   autofocus autocomplete="given-name" required>
+
+    <input id="phone" name="phone" type="tel" pattern="[0-9]*" placeholder="Telefoní číslo" class="input-text style3" autocomplete="tel">
+
+    <input id="email" name="email" type="email" autocomplete="email" placeholder="Email" class="input-text style3"  required>
+
+    <textarea name="text" class="input-text" placeholder="Sděl nám co potřebuješ" autocapitalize required></textarea>
+
+    <input type="submit" value="Odeslat">
+
   </form>
 
 
+
+
 </div>
 </div>
 
@@ -239,7 +238,7 @@
 
 
 
-      <footer id="footer">HELLLOOO
+      <footer id="footer"> Kontaktujte nás na obchod@pwatomasek.cz
 </footer>
 
   <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

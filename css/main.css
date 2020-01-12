@@ -49,8 +49,13 @@ max-width: 100%;
 }
 
 h1 {
-  position: absolute;
 
+
+}
+
+h2 {
+  text-align: center;
+  padding:50px 0 0 0;
 }
 
 @keyframes animate {
@@ -197,7 +202,7 @@ header .logo img {
 
 header .logo img:hover {
 
-  filter: invert();
+  filter: blur(1.2px);
 }
 
 .cover-main {
@@ -320,7 +325,7 @@ h2.sub-title:after {
 #about .wrapper{
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  min-height: 80vh;
   background: #333;
   display:flex;
   justify-content: center;
@@ -422,12 +427,13 @@ h2.sub-title:after {
 }
 #about {
   margin-top:-5px;
-  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   color:white;
   overflow: hidden;
   z-index: 1200;
+  background:#333;
+
 }
 
 
@@ -471,8 +477,8 @@ h2.sub-title:after {
 #footer {
   position: relative;
 
-  height:80px;
-  background-color: black;
+  height:30px;
+  background: linear-gradient(0.25turn, #221148, #111948, #221148);
   color:white;
   text-align: center;
   z-index: -2;
@@ -644,7 +650,7 @@ z-index: 100;
 }
 header .logo img {
     max-width: 200px;
-    height: 200px;
+    height: auto;
 }
 #footer{
   height: 100px;
@@ -702,28 +708,28 @@ img {
 }
 
 .box-1 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/01ZeHnK3F_4_2000px.jpg);
+  background: url("../images/4.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .box-2 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/0st9yhngses-benjamin-child.jpg);
+  background: url("../images/5.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .box-3 {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/Great_Wave_off_Kanagawa2_cr.jpg);
+  background-image: url("../images/6.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .box-4 {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/bfezchfpm2i-igor-ovsyannykov.jpg);
+  background-image: url("../images/7.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -785,130 +791,190 @@ img {
 margin:20% 30% 0;
 }
 
+
+.container-form{
+  height: 70vh;
+      background: linear-gradient(#333 20%, #111948, #221148);
+      padding: 5% 0 100px;
+
+}
+.input-text {
+  height: 48px;
+  background-color: transparent;
+
+}
+#contact {
+  margin: 150px auto 0;
+border: 2px orange solid;
+border-radius: 20px;
+padding: 20px;
+width: 400px;
+}
+
+#email {
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+ border: none;
+ color: white;
+ padding: 10px 25px;
+ text-decoration: none;
+ margin: 25px 35% 5px;
+ cursor: pointer;
+
+}
+
+textarea {
+  height: 120px !important;
+  resize: none;
+  width: 100%;
+}
+
+
+h4 {
+  color:white;
+}
+
+h3 {
+  color:orange;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+@media only screen and (max-width:950px) {.container-form {
+  width: 1000px;
+  position: relative;
+  justify-content: space-between;
+  text-align: center;
+}
 #form {
   height: 20%;
   color:white;
+    background:linear-gradient(0.25turn, #221148, #111948, #221148);
+ }
 
-
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
-@media only screen and (max-width:950px) {
-
-
-#form {
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-font-smoothing:antialiased;
-	-moz-font-smoothing:antialiased;
-	-o-font-smoothing:antialiased;
-	font-smoothing:antialiased;
-	text-rendering:optimizeLegibility;
+ .input-text {
+   display: block;
+  border: none;
+  border-bottom: 1px solid white;
+  background: none;
+  padding: 20px 10px;
+  font-size: 1em;
+  width: 100%;
+  text-transform: uppercase;
+  outline: none;
+  color: white;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+ .input-text::-webkit-input-placeholder {
+  color: white;
+  -moz-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  transform-origin: 0 50%;
 }
+.input-text.style3 {
+  overflow: hidden;
+}
+.input-text.style3:focus::-webkit-input-placeholder {
+  -moz-transform: translateX(70%);
+  -ms-transform: translateX(70%);
+  -webkit-transform: translateX(70%);
+  transform: translateX(70%);
+  opacity: 0;
+}
+
+ input[type=submit] {
+   font-size: large;
+   width:100%;
+   padding:15px;
+   margin:15px 0;
+ }
+  textarea {
+    width:90%;
+    height: 150px;
+    resize: none;
+  }
 
 #form{
 	font-family:"Open Sans", Helvetica, Arial, sans-serif;
 	font-weight:300;
-	font-size: 12px;
-	line-height:30px;
+	font-size: 16px;
+	line-height:48px;
 	color:#777;
 	background-image:url("images/triangle.svg");
+  background:linear-gradient(0.25turn, #221148, #111948, #221148);
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  -moz-font-smoothing:antialiased;
+  -o-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
 }
 
-#form > .container {
+#form > .container-form {
 	max-width:400px;
 	width:100%;
 	margin:0 auto;
 	position:relative;
+
+}
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
-#contact {
-	background:#F9F9F9;
-	padding:25px;
-	margin:50px 0;
-}
 
-#contact h3 {
-	color: #F96;
-	display: block;
-	font-size: 30px;
-	font-weight: 400;
-}
 
-#contact h4 {
-	margin:5px 0 15px;
-	display:block;
-	font-size:13px;
-}
 
-fieldset {
-	border: medium none !important;
-	margin: 0 0 10px;
-	min-width: 100%;
-	padding: 0;
-	width: 100%;
-}
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-	width:100%;
-	border:1px solid #CCC;
-	background:#FFF;
-	margin:0 0 5px;
-	padding:10px;
-}
 
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
-	-webkit-transition:border-color 0.3s ease-in-out;
-	-moz-transition:border-color 0.3s ease-in-out;
-	transition:border-color 0.3s ease-in-out;
-	border:1px solid #AAA;
-}
 
-#contact textarea {
-	height:100px;
-	max-width:100%;
-  resize:none;
-}
 
-#contact button[type="submit"] {
-	cursor:pointer;
-	width:100%;
-	border:none;
-	background:#0CF;
-	color:#FFF;
-	margin:0 0 5px;
-	padding:10px;
-	font-size:15px;
-}
 
-#contact button[type="submit"]:hover {
-	background:#09C;
-	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
-	transition:background-color 0.3s ease-in-out;
-}
 
-#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
 
-#contact input:focus, #contact textarea:focus {
-	outline:0;
-	border:1px solid #999;
-}
-::-webkit-input-placeholder {
- color:#888;
-}
-:-moz-placeholder {
- color:#888;
-}
-::-moz-placeholder {
- color:#888;
-}
-:-ms-input-placeholder {
- color:#888;
-}
 
+
+
+
+
+
+
+
+
+
+/* responsive setting*/
+
+@media only screen and (max-width:400px) {
+  .logo img {
+  width: 40%;
+  }
+  .box {margin-right: -100px;
+  }
+  h1 {
+    position: relative !important;
+    font-size: 20pt;
+  }
+  #popis p {
+    margin: 0;
+  }
+  #popis h1 {
+    margin: 50px 20px;
+
+  }
+
+  #popis >.title {
+    margin: 20px 35%;
+  }
+
+  p {
+    padding:  0;
+  }
 }
