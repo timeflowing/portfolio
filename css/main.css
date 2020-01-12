@@ -12,6 +12,19 @@
 -o-user-select: none;
 user-select: none;
 }
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #181648 inset !important;
+}
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}
+
 section {
   z-index: 200;
 }
@@ -365,7 +378,16 @@ h2.sub-title:after {
 
 .container .card:hover .face.face1 {
   transform: translateY(0px);
-  background:#ff0057;
+
+}
+.container .card1:hover .face.face1 {
+  background: #D2222D;
+}
+.container .card2:hover .face.face1 {
+  background: #FFBF00;
+}
+.container .card3:hover .face.face1 {
+  background: #238823;
 }
 .container .card .face.face1 .content {
   opacity: 0.2;
@@ -477,12 +499,17 @@ h2.sub-title:after {
 #footer {
   position: relative;
 
-  height:30px;
+  height:100px;
   background: linear-gradient(0.25turn, #221148, #111948, #221148);
   color:white;
   text-align: center;
   z-index: -2;
 
+}
+footer p {
+  position: absolute;
+  bottom: 0;
+  color: #24273c;
 }
 
 footer h1 {
@@ -785,18 +812,23 @@ img {
   font-size: 20px;
 }
 
-#popis h1 {margin:50px 200px;
+#popis h1 {margin:30px;
 }
 #popis p {
-margin:20% 30% 0;
+margin:10px 30px 20px;
+width: 500px;
 }
 
 
 .container-form{
-  height: 70vh;
-      background: linear-gradient(#333 20%, #111948, #221148);
+
+      background: linear-gradient(0.25turn, #111948, #221148);
       padding: 5% 0 100px;
 
+
+}
+::placeholder {
+  color:white;
 }
 .input-text {
   height: 48px;
@@ -805,9 +837,9 @@ margin:20% 30% 0;
 }
 #contact {
   margin: 150px auto 0;
-border: 2px orange solid;
+border: 2px #f1862d solid;
 border-radius: 20px;
-padding: 20px;
+padding: 60px 20px 40px;
 width: 400px;
 }
 
@@ -816,14 +848,22 @@ width: 400px;
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: lightgreen;
  border: none;
- color: white;
+ color: #221148;
  padding: 10px 25px;
+ font-size: 18px;
  text-decoration: none;
- margin: 25px 35% 5px;
+ margin: 45px 35% 5px;
  cursor: pointer;
+ transition: 0.3s ease-out;
 
+
+}
+input[type=submit]:hover {
+  background-color:#1d1348;
+  COLOR:lightgreen;
+  border: 0.5px solid lightgreen;
 }
 
 textarea {
@@ -837,11 +877,14 @@ h4 {
   color:white;
 }
 
-h3 {
+#form h3 {
   color:orange;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+@media only screen and (min-width:951px){
+
+}
 @media only screen and (max-width:950px) {.container-form {
   width: 1000px;
   position: relative;
@@ -851,7 +894,7 @@ h3 {
 #form {
   height: 20%;
   color:white;
-    background:linear-gradient(0.25turn, #221148, #111948, #221148);
+  background: linear-gradient(0.60turn, #a20083, #221148);
  }
 
  .input-text {
@@ -978,3 +1021,62 @@ h3 {
     padding:  0;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.form-input {
+  position: relative;
+  padding: 12px 0px 5px 0;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 1px 0 0 #e5e5e5;
+  transition: box-shadow 150ms ease-out;
+
+
+  }
+
+  .form-input:focus {
+
+    box-shadow: 0 2px 0 0 #f1862d;
+  }
+
+.form-label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: white;
+  z-index: 10;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+}
+
+.focused .form-label {
+  transform: translateY(-125%);
+  font-size: 0.75em;
+  color:#f1862d;
+}
+
+
+.form-group {
+  position: relative;
+margin-top:30px; }
+
+  .form-input.filled {
+    box-shadow: 0 2px 0 0 lightgreen;
+  }
+
+  input, textarea{
+      color: white;
+  }
+
+  textarea:focus, input:focus {
+      color: white;
+  }

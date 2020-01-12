@@ -51,8 +51,8 @@
         </div>
       <ul class="menu">
           <li><a href="#home">Domov</a></li>
-          <li><a href="#work">Moje práce</a></li>
-          <li><a href="#about">Kdo jsem ?</a></li>
+          <li><a href="#work">Výtvory</a></li>
+          <li><a href="#about">Proces</a></li>
           <li><a href="#footer">Kontakt</a></li>
       </ul>
       </nav>
@@ -70,7 +70,7 @@
             data-origin-x="0.5"
             data-origin-y="0.5">
         <li class="layer name" data-depth="0.90">Vojtech Tomasek</li>
-        <li class="layer title" data-depth="0.50">Progressive web apps on point.</li>
+        <li class="layer title" data-depth="0.50"> Professional design and coding in one</li>
         <li class="layer btn btn-main" data-depth="0.30">
           <a href="#work" class="portfolio-btn btn-js">Portfolio</a>
           <a href="#footer" class="contact-btn btn-js">Kontakt</a>
@@ -106,7 +106,7 @@
     <div class="title">
       <h1>Web development</h1>
 
-      <p> Tvorba progresivních webových aplikací založená na zkušenostech.
+      <p> Progresivní webové aplikace založeny na kreativním přístupu a odpoutanosti od nepraktických norem.
       </p>
 
     </div>
@@ -123,11 +123,10 @@
 </div>
 
   <section id="about">
-    <h2> Proces tvorby</h2>
     <div class="wrapper">
 
       <div class="container">
-        <div class="card" data-aos="slide-down"
+        <div class="card card1" data-aos="slide-down"
           data-aos-offset="100"
           data-aos-delay="<1></1>00"
           data-aos-duration="1000"
@@ -139,19 +138,19 @@
               <div class="content">
 
                   <img src="images/develop.png" alt="">
-                  <h3>Design</h3>
+                  <h3>Návrh designu</h3>
               </div>
               </div>
               <div class="face face2">
 
                   <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque optio ratione iusto quis officia vitae, modi tenetur et hic aliquam?</p>
-                      <a href="#">Read More</a>
+                    <p> Uděláme návrh podle vašich představ</p>
+
                   </div>
               </div>
 
           </div>
-          <div class="card"data-aos="fade-down"
+          <div class="card card2"data-aos="fade-down"
             data-aos-offset="100"
             data-aos-delay="10"
             data-aos-duration="1000"
@@ -163,19 +162,18 @@
                 <div class="content">
 
                     <img src="images/design.png" alt="">
-                    <h3>Develop</h3>
+                    <h3>Realizace</h3>
                 </div>
                 </div>
                 <div class="face face2">
 
                     <div class="content">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque optio ratione iusto quis officia vitae, modi tenetur et hic aliquam?</p>
-                        <a href="#">Read More</a>
+                      <p>Aplikaci / Design vytvoříme ... </p>
                     </div>
                 </div>
 
             </div>
-            <div class="card"data-aos="fade-up"
+            <div class="card card3"data-aos="fade-up"
               data-aos-offset="100"
               data-aos-delay="200"
               data-aos-duration="1000"
@@ -187,14 +185,14 @@
                   <div class="content">
 
                       <img src="images/deploy.png" alt="">
-                      <h3>Deploy</h3>
+                      <h3>Spuštění</h3>
                   </div>
                   </div>
                   <div class="face face2">
 
                       <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque optio ratione iusto quis officia vitae, modi tenetur et hic aliquam?</p>
-                          <a href="#">Read More</a>
+                        <p>..a odpálíme do světa!</p>
+                          <a href="#">Hosting</a>
                       </div>
                   </div>
 
@@ -214,15 +212,25 @@
 
   <div class="container-form">
   <form id="contact" action="https://formspree.io/mzbdpjnd" method="POST">
-    <h3>Pořebujete se zeptat a nevíte si rady?</h3>
-    <h4>Napište nám a do 24 hodin odpovíme!</h4>
-    <input id="name" name="name" type="text" placeholder="Tvé celé jméno" class="input-text style3"   autofocus autocomplete="given-name" required>
+    <h3>Chcete vytvořit web nebo design?</h3>
+    <h4>Ozvěte se nám a do 24 hodin odpovíme!</h4>
 
-    <input id="phone" name="phone" type="tel" pattern="[0-9]*" placeholder="Telefoní číslo" class="input-text style3" autocomplete="tel">
+    <div class="form-group">
+    <label class="form-label" for="first">Jméno</label>
+    <input id="name" name="name" type="text"  class="input-text style3 form-input" autocomplete="given-name" required> </div>
 
-    <input id="email" name="email" type="email" autocomplete="email" placeholder="Email" class="input-text style3"  required>
+    <div class="form-group">
+    <label class="form-label" for="first">Telefonní číslo</label>
+    <input id="phone" name="phone" type="tel" pattern="[0-9]*" class="input-text style3 form-input" autocomplete="tel"> </div>
 
-    <textarea name="text" class="input-text" placeholder="Sděl nám co potřebuješ" autocapitalize required></textarea>
+    <div class="form-group">
+    <label class="form-label" for="first">Email</label>
+    <input id="email" name="email" type="email" autocomplete="email" class="input-text style3 form-input"  required></div>
+
+    <div class="form-group">
+    <textarea name="text" class="input-text form-input" autocapitalize required placeholder="Jak bude vypadat tvůj projekt ?"></textarea>
+
+</div>
 
     <input type="submit" value="Odeslat">
 
@@ -238,7 +246,7 @@
 
 
 
-      <footer id="footer"> Kontaktujte nás na obchod@pwatomasek.cz
+      <footer id="footer"> <p>2019</p>
 </footer>
 
   <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
