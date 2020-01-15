@@ -500,7 +500,7 @@ h2.sub-title:after {
   position: relative;
 
   height:100px;
-  background: linear-gradient(0.25turn, #221148, #111948, #221148);
+  background: linear-gradient(0.25turn, #111948, #221148);
   color:white;
   text-align: center;
   z-index: -2;
