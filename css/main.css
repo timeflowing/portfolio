@@ -543,6 +543,21 @@ z-index: 100;
 
 }
 @media only screen and (max-width: 950px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   ul#scene li.title {
     font-size:20px;
   }
@@ -821,7 +836,8 @@ width: 500px;
 
 
 .container-form{
-
+background-image:url('https://image.freepik.com/free-vector/gradient-geometric-shape-background_78532-374.jpg');
+background-size:contain;
       background: linear-gradient(0.25turn, #111948, #221148);
       padding: 5% 0 100px;
 
@@ -882,11 +898,18 @@ h4 {
 }
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+@media only screen and (max-width:480px) {
+  #popis p {
+    padding-left: 5px;
+    margin:0 !important;
+    width: auto !important;
+  }
+}
 @media only screen and (min-width:951px){
 
 }
 @media only screen and (max-width:950px) {.container-form {
-  width: 1000px;
+
   position: relative;
   justify-content: space-between;
   text-align: center;
